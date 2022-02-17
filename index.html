@@ -24,6 +24,9 @@
       background: hsl(212, 45%, 89%);
       font-family: 'Outfit', sans-serif;
       min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .card {
@@ -33,6 +36,7 @@
       text-align: center;
       margin: 0 auto;
       padding: 12px 14px;
+      box-shadow: 0px 0px 15px hsla(0, 0%, 0%, .1);
     }
 
     .card-image {
@@ -54,17 +58,30 @@
       color: hsl(220, 15%, 55%);
       margin-bottom: 1rem;
     }
+
+    .attribution {
+      margin-bottom: 20px;
+      text-align: center;
+      margin-top: 20px;
+      font-size: .7rem;
+    }
   </style>
 </head>
 
 <body>
-  <div class="card">
-    <img class="card-image" src="./images/image-qr-code.png" alt="QR Code">
-    <div class="card-title">
-      Improve your front-end skills by building projects
+  <div class="container">
+    <div class="card">
+      <img class="card-image" src="./images/image-qr-code.png" alt="QR Code">
+      <div class="card-title">
+        Improve your front-end skills by building projects
+      </div>
+      <div class="card-subtitle">
+        Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+      </div>
     </div>
-    <div class="card-subtitle">
-      Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H">Frontend Mentor</a>
+      Coded by <a href="https://www.github.com/kiraaathan">kiraaathan</a>
     </div>
   </div>
 </body>
